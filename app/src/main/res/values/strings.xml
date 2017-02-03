@@ -35,6 +35,22 @@
     <string name="life_check_question_4">So far I have gotten the important things I want in life</string>
     <string name="life_check_question_5">If I could live my life over, I would change almost nothing</string>
     <string name="number_selector">Number selector</string>
+    <string name="squad_directions_top_text">Start Your Squad to help grow your GRIT</string>
+    <string name="squad_directions_add">Add at least 3 people you trust to give honest feedback about you. Here's how this works:</string>
+    <string name="squad_directions_1">1. Squadmats will complete three similar activities</string>
+    <string name="squad_directions_2">2. You won't see their responses and they won't see yours</string>
+    <string name="squad_directions_3">3. We aggregate all responses to inform Your Path</string>
+    <string name="squad_directions_4">4. Then, you can choose if you want to share any information</string>
+    <string name="sqaud_direction_addfrom_facebook">Add Contacts Via Facebook</string>
+    <string name="sqaud_direction_addfrom_contacts">Add Contacts Via My Contacts</string>
+    <string name="name1">Josheph Kung</string>
+    <string name="name2">Robert Smith</string>
+    <string name="name3">Jennifer Knapp</string>
+    <string name="name4">Sarah Mysore</string>
+    <string name="name5">James Huffman</string>
+    <string name="send_invite">Send Invite</string>
+
+
 
 
 
