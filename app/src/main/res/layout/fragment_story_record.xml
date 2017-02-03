@@ -17,9 +17,10 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/story_record"
+        android:src="@drawable/story_record"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:id="@+id/story_record_button"
         />
 
     <Button
@@ -30,7 +31,7 @@
         android:textColor="#6fdc6f"
         android:layout_alignParentBottom="true"
         android:background="@drawable/sign_up"
-        android:id="@+id/start_Button"
+        android:id="@+id/story_save_button"
         android:text="@string/save"/>
 
 </RelativeLayout>

@@ -23,6 +23,7 @@
             android:src="@drawable/word_pick_left"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:id="@+id/leftArrow1"
             android:contentDescription="@string/word_picker_leftarrow"
             />
         <TextView
@@ -31,6 +32,7 @@
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
             android:layout_centerInParent="true"
+            android:id="@+id/word_tumbler1"
             android:textSize="30sp"
             android:text="@string/word_picker_choice1"/>
         <ImageView
@@ -39,6 +41,7 @@
             android:src="@drawable/word_pick_right"
             android:contentDescription="@string/word_picker_rightarrow"
             android:layout_centerVertical="true"
+            android:id="@+id/RightArrow1"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
     <RelativeLayout
@@ -51,6 +54,7 @@
             android:src="@drawable/word_pick_left"
             android:layout_centerVertical="true"
             android:contentDescription="@string/word_picker_leftarrow"
+            android:id="@+id/leftArrow2"
             android:layout_alignParentStart="true"/>
         <TextView
             android:layout_width="wrap_content"
@@ -58,6 +62,7 @@
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
             android:layout_centerInParent="true"
+            android:id="@+id/word_tumbler2"
             android:textSize="30sp"
             android:text="@string/word_picker_choice2"/>
         <ImageView
@@ -66,6 +71,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/word_pick_right"
             android:contentDescription="@string/word_picker_rightarrow"
+            android:id="@+id/RightArrow2"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
     <RelativeLayout
@@ -78,6 +84,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/word_pick_left"
             android:contentDescription="@string/word_picker_leftarrow"
+            android:id="@+id/leftArrow3"
             android:layout_alignParentStart="true"/>
         <TextView
             android:layout_width="wrap_content"
@@ -86,7 +93,9 @@
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
             android:layout_centerInParent="true"
+            android:id="@+id/word_tumbler3"
             android:textSize="30sp"
+
             android:text="@string/word_picker_choice3"/>
         <ImageView
             android:layout_width="100dp"
@@ -94,6 +103,7 @@
             android:layout_centerVertical="true"
             android:contentDescription="@string/word_picker_rightarrow"
             android:src="@drawable/word_pick_right"
+            android:id="@+id/RightArrow3"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
     <RelativeLayout
@@ -106,6 +116,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/word_pick_left"
             android:contentDescription="@string/word_picker_leftarrow"
+            android:id="@+id/leftArrow4"
             android:layout_alignParentStart="true"/>
         <TextView
             android:layout_width="wrap_content"
@@ -114,12 +125,14 @@
             android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:textSize="30sp"
+            android:id="@+id/word_tumbler4"
             android:text="@string/word_picker_choice4"/>
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerVertical="true"
             android:src="@drawable/word_pick_right"
+            android:id="@+id/RightArrow4"
             android:contentDescription="@string/word_picker_rightarrow"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
@@ -130,7 +143,7 @@
         android:layout_gravity="center"
         android:textColor="#6fdc6f"
         android:background="@drawable/sign_up"
-        android:id="@+id/start_Button"
+        android:id="@+id/picker_save_button"
         android:text="@string/save"/>
 
 

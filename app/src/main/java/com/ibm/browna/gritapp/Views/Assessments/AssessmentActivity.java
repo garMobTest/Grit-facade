@@ -1,6 +1,7 @@
 package com.ibm.browna.gritapp.Views.Assessments;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -111,12 +112,17 @@ public class AssessmentActivity extends Activity {
                     storyDot.setVisibility(View.INVISIBLE);
                     pickerDot.setVisibility(View.INVISIBLE);
                     FragmentManager fragmentManager = getFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().replace(R.id.fragmentContainer, new SquadFragment(),"");
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().replace(R.id.fragmentContainer, new SquadDirectionsFragment(),"");
                     fragmentTransaction.commit();
                 }
 
             }
         });
 
+    }
+    public void swapFragments(Fragment fragment){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment,"");
+        fragmentTransaction.commit();
     }
 }

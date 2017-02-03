@@ -57,7 +57,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="#6fdc6f"
         android:background="@drawable/sign_up"
-        android:id="@+id/start_Button"
+        android:id="@+id/add_from_facebook"
         android:layout_marginTop="60dp"
         android:text="@string/sqaud_direction_addfrom_facebook"/>
     <TextView

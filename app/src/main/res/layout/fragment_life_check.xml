@@ -94,7 +94,7 @@
         android:textColor="#6fdc6f"
         android:layout_alignParentBottom="true"
         android:background="@drawable/sign_up"
-        android:id="@+id/start_Button"
+        android:id="@+id/life_check_save"
         android:text="@string/save"/>
 
 </RelativeLayout>
