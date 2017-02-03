@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toolbar;
 
 import com.ibm.browna.gritapp.R;
 
@@ -35,6 +36,9 @@ public class AssessmentActivity extends Activity {
         storyDot = (ImageView)findViewById(R.id.story_dot);
         lifeDot = (ImageView)findViewById(R.id.life_dot);
         squadDot = (ImageView)findViewById(R.id.squad_dot);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setActionBar(myToolbar);
 
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().add(R.id.fragmentContainer, new PickerFragment(),"");
