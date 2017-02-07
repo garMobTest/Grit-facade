@@ -26,7 +26,7 @@ public class SquadAdderFragment extends Fragment {
         mInviteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AssessmentActivity)getActivity()).swapFragments(new SquadCongratsFragment());
+                ((AssessmentActivity)getActivity()).swapFragments(new SquadSendinviteFragment());
             }
         });
         mAdder1.setOnClickListener(new View.OnClickListener() {

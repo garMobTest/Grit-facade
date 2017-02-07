@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    android:orientation="vertical">
     <Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/gritgreen"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-       />
+        android:background="@color/gritgreen">
+
+        <Button
+            android:src="@drawable/grit_spelling"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:background="@drawable/grit_spelling"/>
+    </Toolbar>
+
+
     <LinearLayout
-        android:baselineAligned="false"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gritgreen"
+    android:elevation="4dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/topButtonsContainer"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/borderLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"
+        android:layout_marginBottom="-25dp"
+
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/gritgreen"
         android:id="@+id/topButtons"
         android:weightSum="4"
-        android:elevation="4dp"
-        android:gravity="center_horizontal">
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -32,6 +62,8 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
+
                 >
                 <ImageView
                     android:layout_width="wrap_content"
@@ -41,23 +73,25 @@
                     android:contentDescription="@string/white_nav_desc"
                     />
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="3dp"
                     android:visibility="visible"
                     android:id="@+id/word_dot"
                     android:contentDescription="@string/dot_nav_desc"
-                    android:background="@drawable/dot_uninav"/>
+                    android:background="@drawable/dot_uninav"
+                    android:elevation="10dp" />
 
             </FrameLayout>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
                 android:text="@string/word_picker_nav"
                 android:textColor="@color/white"
                 android:layout_margin="10dp"
-                />
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
         </LinearLayout>
         <LinearLayout
@@ -79,23 +113,26 @@
                     android:contentDescription="@string/white_nav_desc"
                     />
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="3dp"
                     android:visibility="invisible"
                     android:id="@+id/story_dot"
                     android:contentDescription="@string/dot_nav_desc"
                     android:background="@drawable/dot_uninav"/>
 
             </FrameLayout>
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="68dp"
                 android:layout_height="wrap_content"
                 android:text="@string/story_record_nav"
                 android:layout_margin="10dp"
                 android:textColor="@color/white"
-                />
+                android:textAlignment="center"
+                android:id="@+id/textView4"
+                android:textStyle="bold" />
 
         </LinearLayout>
         <LinearLayout
@@ -117,23 +154,24 @@
                     android:layout_marginTop="10dp"
                     />
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="3dp"
                     android:visibility="invisible"
                     android:id="@+id/life_dot"
                     android:contentDescription="@string/dot_nav_desc"
                     android:background="@drawable/dot_uninav"/>
             </FrameLayout>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:text="@string/life_check_nav"
                 android:layout_margin="10dp"
                 android:layout_marginStart="5dp"
                 android:textColor="@color/white"
-                />
+                android:textAlignment="center"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -154,10 +192,10 @@
                     android:layout_marginTop="10dp"
                     />
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="3dp"
                     android:visibility="invisible"
                     android:contentDescription="@string/dot_nav_desc"
                     android:id="@+id/squad_dot"
@@ -170,9 +208,12 @@
                 android:layout_margin="10dp"
                 android:layout_marginStart="5dp"
                 android:textColor="@color/white"
-                />
+                android:textAlignment="center"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
+</LinearLayout>
+
 
     <FrameLayout
         android:layout_width="match_parent"

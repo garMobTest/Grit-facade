@@ -8,7 +8,7 @@
     <string name="password_hint">Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_text">Forgot your password?</string>
-    <string name="or_facebook">or Sign in with Facebook</string>
+    <string name="or_facebook">-------  or Sign up using  -------</string>
     <string name="not_ready_expore_app">Not ready to Sign up? Explore the app</string>
     <string name="facebook">Facebook</string>
     <string name="word_picker_nav">Word Picker</string>
@@ -23,7 +23,7 @@
     <string name="word_picker_choice1">Outgoing</string>
     <string name="word_picker_choice2">Credit</string>
     <string name="word_picker_choice3">Fun</string>
-    <string name="word_picker_choice4">Outgoing</string>
+    <string name="word_picker_choice4">Motivated</string>
     <string name="nunber_one_of_five">1 / 5</string>
     <string name="nunber_two_of_five">2 / 5</string>
     <string name="nunber_three_of_five">3 / 5</string>

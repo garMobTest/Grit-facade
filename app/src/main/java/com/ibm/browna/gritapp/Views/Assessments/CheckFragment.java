@@ -34,19 +34,19 @@ public class CheckFragment extends Fragment {
             public void onClick(View view) {
                 switch (count){
                     case 1:
-                        setNewQuestion(2,R.string.nunber_two_of_five,R.string.life_check_question_2);
+                        setNewQuestion(2, R.string.nunber_two_of_five, R.string.life_check_question_2);
                         count++;
                         break;
                     case 2:
-                        setNewQuestion(2,R.string.nunber_three_of_five,R.string.life_check_question_3);
+                        setNewQuestion(2, R.string.nunber_three_of_five, R.string.life_check_question_3);
                         count++;
                         break;
                     case 3:
-                        setNewQuestion(2,R.string.nunber_four_of_five,R.string.life_check_question_4);
+                        setNewQuestion(2, R.string.nunber_four_of_five, R.string.life_check_question_4);
                         count++;
                         break;
                     case 4:
-                        setNewQuestion(2,R.string.nunber_five_of_five,R.string.life_check_question_5);
+                        setNewQuestion(2, R.string.nunber_five_of_five, R.string.life_check_question_5);
                         count++;
                         break;
                     case 5:

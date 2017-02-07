@@ -10,32 +10,31 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textColor="@color/white"
-        android:text="OUTSTANDING"/>
+        android:text="Send the invite to your Squad"
+        android:id="@+id/squadInvite" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
         android:textColor="@color/white"
-        android:text="We combined your results and your squads feedback. View the suggested path to grow your GRIT"/>
-
-    <ImageView
-        android:layout_width="249dp"
-        android:layout_height="100dp"
-        android:src="@drawable/trophy"
-        android:layout_weight="0.82"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"/>
-
+        android:text="We'll ask each squadmate to do the 3 activities that you just completed to help inform the path created for you.  "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Not to worry, this is all secure and won't be shared. Each squadmate won't see what each squadmate says about you "/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/sign_up"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="65dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/start_Button"
-        android:text="View Path"
+        android:id="@+id/send_squad_invites"
+        android:text="Send Invite"
         android:textColor="@color/colorPrimary" />
 
 </LinearLayout>

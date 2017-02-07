@@ -2,37 +2,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/girtblue">
-    <TextView
-        android:layout_width="wrap_content"
+    android:padding="20dp">
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/sign_up"
+        android:id="@+id/life_check_save"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/borderLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:text=""
+        android:textAlignment="center"
+        android:alpha=".1"
+        android:layout_above="@+id/life_check_prompt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textColor="@color/white"
         android:text="1 / 5"
-        android:id="@+id/life_check_count"/>
+        android:id="@+id/life_check_count"
+        android:textAlignment="center"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/life_check_count"
-        android:layout_marginTop="20dp"
-        android:textSize="35sp"
-        android:textColor="@color/white"
-        android:layout_margin="20dp"
-        android:text="@string/life_check_question_1"
-        android:id="@+id/life_check_prompt"/>
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="20dp"
         android:id="@+id/life_check_number_box"
-        android:layout_centerVertical="true"
-        >
+        android:layout_below="@+id/life_check_prompt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:layout_width="40dp"
@@ -86,15 +99,17 @@
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="250dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="#6fdc6f"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/sign_up"
-        android:id="@+id/life_check_save"
-        android:text="@string/save"/>
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:text="@string/life_check_question_1"
+        android:id="@+id/life_check_prompt"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/life_check_count"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
 
 </RelativeLayout>
